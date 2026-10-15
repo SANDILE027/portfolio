@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sandile Luthuli | Computer Science Honours student and tutor</title>
+<meta name="description" content="Sandile Luthuli: Computer Science Honours student at the University of Zululand, tutoring Data Structures and Software Engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F5F9; --card:#FFFFFF; --ink:#12263A; --muted:#51647A;
+  --line:#C9D3DF; --accent:#1F5FBF; --mark:#FFC857;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1A26; --card:#16263A; --ink:#E8EEF5; --muted:#9FB0C3;
+    --line:#2B4058; --accent:#7FB0FF; --mark:#FFC857;
+  }
+}
+*{box-sizing:border-box}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:1.0625rem;line-height:1.65;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--mark);outline-offset:3px;border-radius:2px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0}
+
+/* hero */
+.hero{padding:3.5rem 0 2.5rem;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:700;letter-spacing:-.02em}
+.role{font-family:var(--display);font-size:1.2rem;color:var(--muted);margin:.75rem 0 1.25rem;font-weight:500}
+.lead{max-width:34rem;margin:0 0 1.5rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.links a{
+  font-family:var(--display);font-weight:500;font-size:.95rem;text-decoration:none;
+  color:var(--ink);background:var(--card);border:1px solid var(--line);
+  padding:.5rem .9rem;border-radius:.4rem;
+}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.tree{width:100%;height:auto}
+.tree line{stroke:var(--line);stroke-width:2}
+.tree circle{fill:var(--card);stroke:var(--accent);stroke-width:2.5}
+.tree circle.on{fill:var(--mark);stroke:var(--ink)}
+.tree text{font-family:var(--display);font-size:11px;fill:var(--ink);text-anchor:middle}
+
+/* sections */
+section{padding:2.5rem 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:1.7rem;margin-bottom:1.25rem}
+.entry{display:grid;grid-template-columns:11rem 1fr;gap:.25rem 1.5rem;margin-bottom:1.5rem}
+.when{font-family:var(--display);color:var(--muted);font-size:.95rem;padding-top:.25rem}
+.entry h3{font-size:1.15rem}
+.entry p{margin:.35rem 0 0}
+.org{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem 2rem}
+.skills h3{font-size:1rem;margin-bottom:.35rem}
+.skills p{margin:0;color:var(--muted)}
+.cert{list-style:none;margin:0;padding:0}
+.cert li{padding:.7rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:.25rem 1rem}
+.cert li:first-child{border-top:0}
+.cert b{font-family:var(--display);font-weight:500}
+.cert span{color:var(--muted);font-size:.95rem}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.25rem}
+.proj a{display:block;text-decoration:none;color:inherit;border-left:4px solid var(--accent);padding:.2rem 0 .2rem 1rem}
+.proj a:hover h3{color:var(--accent)}
+.proj p{margin:.3rem 0 0;color:var(--muted)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+
+@media (max-width:42rem){
+  .hero-grid{grid-template-columns:1fr}
+  .tree{max-width:20rem}
+  .entry{grid-template-columns:1fr}
+  .cert li{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Sandile Luthuli</h1>
+      <p class="role">Computer Science Honours student and tutor</p>
+      <p class="lead">I study at the University of Zululand and tutor Data Structures and Software Engineering. I work with Python, SQL and Bash, and I'm building my skills in cybersecurity and cloud.</p>
+      <nav class="links" aria-label="Contact and profiles">
+        <a href="mailto:sandilehfs12@gmail.com">Email me</a>
+        <a href="tel:+27769192761">076 919 2761</a>
+        <a href="Sandile_Luthuli_CV.pdf">Download CV (PDF)</a>
+        <a href="https://github.com/SANDILE027">GitHub</a>
+        <a href="https://www.linkedin.com/in/sandile-luthuli-hfs">LinkedIn</a>
+        <a href="https://www.credly.com/users/sandile-luthuli.fd17567b">Credly badges</a>
+      </nav>
+    </div>
+    <svg class="tree" viewBox="0 0 240 190" role="img" aria-label="A binary tree diagram with nodes labelled Python, SQL, Bash, Git, Linux and Networks">
+      <line x1="120" y1="28" x2="62" y2="82"/><line x1="120" y1="28" x2="178" y2="82"/>
+      <line x1="62" y1="82" x2="32" y2="140"/><line x1="62" y1="82" x2="92" y2="140"/>
+      <line x1="178" y1="82" x2="148" y2="140"/><line x1="178" y1="82" x2="208" y2="140"/>
+      <circle class="on" cx="120" cy="28" r="22"/><text x="120" y="32">Python</text>
+      <circle cx="62" cy="82" r="20"/><text x="62" y="86">SQL</text>
+      <circle cx="178" cy="82" r="20"/><text x="178" y="86">Bash</text>
+      <circle cx="32" cy="140" r="20"/><text x="32" y="144">Git</text>
+      <circle cx="92" cy="140" r="20"/><text x="92" y="144">Linux</text>
+      <circle cx="148" cy="140" r="20"/><text x="148" y="144">Net</text>
+      <circle cx="208" cy="140" r="20"/><text x="208" y="144">Cyber</text>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="when">2026, semester 1</div>
+      <div>
+        <h3>Data Structures tutor <span class="org">at the University of Zululand</span></h3>
+        <p>Hired by the university to tutor Data Structures.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2026, semester 2</div>
+      <div>
+        <h3>Software Engineering tutor <span class="org">at the University of Zululand</span></h3>
+        <p>Hired by the university to tutor Software Engineering.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="when">2026, current</div>
+      <div>
+        <h3>Honours in Computer Science</h3>
+        <p class="org">University of Zululand</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2022 to 2025</div>
+      <div>
+        <h3>BSc in Computer Science and Hydrology</h3>
+        <p class="org">University of Zululand</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Programming</h3><p>Python, Bash scripting, data structures, problem solving</p></div>
+      <div><h3>Databases</h3><p>SQL and PostgreSQL, relational design with keys and joins</p></div>
+      <div><h3>Tools</h3><p>Git and GitHub, Linux command line, GitHub Codespaces</p></div>
+      <div><h3>Networking and security</h3><p>Networking basics, Linux, pentesting and cybersecurity fundamentals</p></div>
+      <div><h3>Teaching</h3><p>Explaining algorithms and software engineering to university students</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="proj">
+      <a href="https://github.com/SANDILE027/celestial-bodies-database">
+        <h3>Celestial Bodies Database</h3>
+        <p>A PostgreSQL database of galaxies, stars, planets and moons with primary and foreign keys. It is a freeCodeCamp certification project.</p>
+      </a>
+      <a href="https://github.com/SANDILE027/mario-database">
+        <h3>Video game characters database</h3>
+        <p>A PostgreSQL database that links characters, actions and sounds with one-to-one, one-to-many and many-to-many relationships.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul class="cert">
+      <li><b><a href="https://www.hackerrank.com/certificates/c1307e11a9f1">Software Engineer Intern</a></b><span>HackerRank, October 2026</span></li>
+      <li><b>SQL (Basic), SQL (Advanced), Python (Basic), Problem Solving (Intermediate)</b><span>HackerRank</span></li>
+      <li><b><a href="https://www.credly.com/users/sandile-luthuli.fd17567b">Linux Unhatched and Networking Basics</a></b><span>Cisco Networking Academy, March 2026</span></li>
+      <li><b>Learning to Earning: Pentesting, A Phishing Tale, Browse the Internet Safely, Fundamentals of Cybersecurity I</b><span>Accenture, 2026</span></li>
+      <li><b>AWS Foundations: Machine Learning Basics</b><span>Deviare, September 2026</span></li>
+      <li><b><a href="https://www.freecodecamp.org/sandilehfs12">SQL and PostgreSQL, Celestial Bodies Database</a></b><span>freeCodeCamp, October 2026</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Contact: <a href="mailto:sandilehfs12@gmail.com">sandilehfs12@gmail.com</a> or <a href="tel:+27769192761">076 919 2761</a></div>
+</footer>
+</body>
+</html>
